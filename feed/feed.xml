@@ -13,11 +13,11 @@
 	
 	<entry>
 		<title>Write OpenAPI with TypeSpec</title>
-		<link href="https://blog.trl.sn/blog/firstpost/"/>
+		<link href="https://blog.trl.sn/blog/typespec-for-openapi/"/>
 		<updated>2024-03-25T00:00:00Z</updated>
-		<id>https://blog.trl.sn/blog/firstpost/</id>
+		<id>https://blog.trl.sn/blog/typespec-for-openapi/</id>
 		<content type="html">&lt;p&gt;TypeSpec&lt;/p&gt;
-&lt;h2 id=&quot;example&quot; tabindex=&quot;-1&quot;&gt;Example &lt;a class=&quot;header-anchor&quot; href=&quot;https://blog.trl.sn/blog/firstpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;example&quot; tabindex=&quot;-1&quot;&gt;Example &lt;a class=&quot;header-anchor&quot; href=&quot;https://blog.trl.sn/blog/typespec-for-openapi/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;pre class=&quot;shiki rose-pine-dawn&quot; style=&quot;background-color:#faf4ed;color:#575279&quot; tabindex=&quot;0&quot;&gt;&lt;code&gt;&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;color:#56949F&quot;&gt;@maxLength&lt;/span&gt;&lt;span style=&quot;color:#797593&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#D7827E&quot;&gt;10&lt;/span&gt;&lt;span style=&quot;color:#797593&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;color:#286983&quot;&gt;scalar&lt;/span&gt;&lt;span style=&quot;color:#56949F&quot;&gt; shortString&lt;/span&gt;&lt;span style=&quot;color:#286983&quot;&gt; extends&lt;/span&gt;&lt;span style=&quot;color:#56949F&quot;&gt; string&lt;/span&gt;&lt;span style=&quot;color:#797593&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;line&quot;&gt;&lt;/span&gt;
