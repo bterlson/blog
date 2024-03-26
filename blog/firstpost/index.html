@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Write OpenAPI with TypeSpec</title>
+		<meta name="description" content="Why and how TypeSpec makes API-First a reasonable approach">
+		<link rel="stylesheet" href="https://unpkg.com/normalize.css">
+		<link rel="stylesheet" href="https://unpkg.com/magick.css">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Brian&#39;s Blog">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Brian&#39;s Blog">
+		<link rel="stylesheet" href="/bundle/jQRxM6Nri4.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<h1><a href="/" class="home-link">Brian&#39;s Blog</a></h1>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
+					<li class="nav-item"><a href="https://twitter.com/bterlson">Twitter</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+<h1>Write OpenAPI with TypeSpec</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2024-03-25">25 March 2024</time></li>
+	<li><a href="/tags/typespec/" class="post-tag">TypeSpec</a>, </li>
+	<li><a href="/tags/openapi/" class="post-tag">OpenAPI</a></li>
+</ul>
+
+<p>TypeSpec</p>
+<h2 id="example" tabindex="-1">Example <a class="header-anchor" href="#example">#</a></h2>
+<pre class="shiki rose-pine-dawn" style="background-color:#faf4ed;color:#575279" tabindex="0"><code><span class="line"><span style="color:#56949F">@maxLength</span><span style="color:#797593">(</span><span style="color:#D7827E">10</span><span style="color:#797593">)</span></span>
+<span class="line"><span style="color:#286983">scalar</span><span style="color:#56949F"> shortString</span><span style="color:#286983"> extends</span><span style="color:#56949F"> string</span><span style="color:#797593">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#286983">model</span><span style="color:#56949F"> Foo</span><span style="color:#286983"> extends</span><span style="color:#56949F"> Bar</span><span style="color:#797593"> {</span></span>
+<span class="line"><span style="color:#D7827E;font-style:italic">  x</span><span style="color:#286983">:</span><span style="color:#56949F"> shortString</span><span style="color:#797593">;</span></span>
+<span class="line"><span style="color:#797593">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#286983">model</span><span style="color:#56949F"> Page</span><span style="color:#797593">&#x3C;</span><span style="color:#56949F">T</span><span style="color:#797593">></span><span style="color:#797593"> {</span></span>
+<span class="line"><span style="color:#D7827E;font-style:italic">  items</span><span style="color:#286983">:</span><span style="color:#56949F"> T</span><span style="color:#797593">[];</span></span>
+<span class="line"><span style="color:#D7827E;font-style:italic">  pageSize</span><span style="color:#286983">:</span><span style="color:#56949F"> int32</span><span style="color:#797593">;</span></span>
+<span class="line"><span style="color:#797593">}</span></span></code></pre>
+
+
+		</main>
+
+		<footer></footer>
+
+		<!-- This page `/blog/firstpost/` was built on 2024-03-26T07:05:39.709Z -->
+	</body>
+</html>

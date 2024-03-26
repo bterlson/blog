@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>https://blog.trl.sn/blog/firstpost/</loc>
+		<lastmod>2024-03-25</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://blog.trl.sn/blog/</loc>
+		<lastmod>2024-03-26</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://blog.trl.sn/</loc>
+		<lastmod>2024-03-26</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://blog.trl.sn/tags/</loc>
+		<lastmod>2024-03-26</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://blog.trl.sn/tags/typespec/</loc>
+		<lastmod>2024-03-26</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://blog.trl.sn/tags/openapi/</loc>
+		<lastmod>2024-03-26</lastmod>
+	</url>
+</urlset>
