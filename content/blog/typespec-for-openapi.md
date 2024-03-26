@@ -7,7 +7,7 @@ tags:
   - OpenAPI
 ---
 
-TypeSpec
+TypeSpec test
 
 ## Example
 
