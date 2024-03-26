@@ -60,7 +60,6 @@
 &lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;color:#D7827E;font-style:italic&quot;&gt;  status&lt;/span&gt;&lt;span style=&quot;color:#286983&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;color:#EA9D34&quot;&gt; &quot;Alive&quot;&lt;/span&gt;&lt;span style=&quot;color:#575279&quot;&gt; | &lt;/span&gt;&lt;span style=&quot;color:#EA9D34&quot;&gt;&quot;Dead&quot;&lt;/span&gt;&lt;span style=&quot;color:#797593&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;color:#797593&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;figcaption&gt;A TypeSpec union of literal types&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt; &lt;/p&gt;
 &lt;figure&gt;
 &lt;pre class=&quot;shiki rose-pine-dawn&quot; style=&quot;background-color:#faf4ed;color:#575279&quot; tabindex=&quot;0&quot;&gt;&lt;code&gt;&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;color:#56949F&quot;&gt;status&lt;/span&gt;&lt;span style=&quot;color:#797593&quot;&gt;:&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;color:#56949F&quot;&gt;  type&lt;/span&gt;&lt;span style=&quot;color:#797593&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;color:#EA9D34&quot;&gt; string&lt;/span&gt;&lt;/span&gt;
@@ -76,7 +75,6 @@
 &lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;color:#797593&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;figcaption&gt;A TypeSpec union of objects&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;p&gt; &lt;/p&gt;
 &lt;figure&gt;
 &lt;pre class=&quot;shiki rose-pine-dawn&quot; style=&quot;background-color:#faf4ed;color:#575279&quot; tabindex=&quot;0&quot;&gt;&lt;code&gt;&lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;color:#56949F&quot;&gt;items&lt;/span&gt;&lt;span style=&quot;color:#797593&quot;&gt;:&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;line&quot;&gt;&lt;span style=&quot;color:#56949F&quot;&gt;  type&lt;/span&gt;&lt;span style=&quot;color:#797593&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;color:#EA9D34&quot;&gt; array&lt;/span&gt;&lt;/span&gt;
