@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 1
 numberOfLatestPostsToShow: 3
 ---
-<p>Greetings! My name is Brian Terlson and I work on Azure at Microsoft, predominantly on <a href="https://typespec.io">TypeSpec</a> and the Azure SDK for JS. This blog contains my own thoughts and opinions about TypeSpec in particular, and on building software and services in the cloud era in general.</p>
+<p>Greetings! I am Brian Terlson and I work at Microsoft building <a href="https://typespec.io">TypeSpec</a> and the Azure SDK for JS. This blog contains my own thoughts and opinions about TypeSpec and building software and services in the cloud era.</p>
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
