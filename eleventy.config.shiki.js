@@ -2,7 +2,8 @@
 const theme = 'rose-pine-dawn';
 const langs = [
   "typescript",
-  JSON.parse(require("fs").readFileSync("./typespec.json"))
+  JSON.parse(require("fs").readFileSync("./typespec.json")),
+  "yaml"
 ]
 module.exports = (eleventyConfig) => {
   // empty call to notify 11ty that we use this feature

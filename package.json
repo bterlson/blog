@@ -43,6 +43,7 @@
 	},
 	"dependencies": {
 		"magick.css": "^1.0.5",
+		"markdown-it-footnote": "^4.0.0",
 		"normalize.css": "^8.0.1",
 		"shiki": "^1.2.0"
 	}

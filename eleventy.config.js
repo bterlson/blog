@@ -9,6 +9,7 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
 const pluginShiki = require("./eleventy.config.shiki.js");
+const pluginMDI = require("./eleventy.config.markdownit.js");
 
 module.exports = function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
@@ -28,7 +29,7 @@ module.exports = function(eleventyConfig) {
 	// App plugins
 	eleventyConfig.addPlugin(pluginDrafts);
 	eleventyConfig.addPlugin(pluginImages);
-
+	eleventyConfig.addPlugin(pluginMDI);
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginShiki);
 	eleventyConfig.addPlugin(pluginNavigation);
