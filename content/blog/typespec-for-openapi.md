@@ -11,7 +11,7 @@ I've spent the last few years at Microsoft working on an API definition language
 
 ## OpenAPI: the good and the not-so-good
 
-OpenAPI is pretty great at describing the low level details of how an HTTP API works. It allows software to understand the shape of an API which in turn enables myriad useful things, like generating documentation, configuring API gateways, or generating test cases. The fact that OpenAPI is the most widely used language to describe HTTP APIs is a testament to these strengths.
+OpenAPI is pretty great at describing the low level details of how an HTTP API works. It allows software to understand the shape of an API which in turn enables myriad useful things, like generating clients and documentation, configuring API gateways, or generating test cases. The fact that OpenAPI is the most widely used language to describe HTTP APIs is a testament to these strengths.
 
 However, after working with OpenAPI inside Azure, it is also clear to me that OpenAPI suffers a few critical weaknesses. Humans don't find OpenAPI particularly pleasant to author and review, whether in JSON or YAML. The code generation from OpenAPI is often not stellar despite heroic efforts from many in the community[^1]. It also struggles when building APIs at scale where its verbosity and lack of reusable components require significant investment in API reviews and governance process.
 
@@ -23,7 +23,7 @@ I believe API-first development principles[^2] are great in theory, but in pract
 
 ## Enter TypeSpec
 
-TypeSpec is designed to be protocol agonstic, but the team has invested heavily in making great OpenAPI 3.0 emit. You can use TypeSpec to define most OpenAPI documents[^3] by using its `http` standard library which provides various types and decorators to add http-specific metadata like headers, query strings, or status codes. Writing OpenAPI in TypeSpec has many advantages over using OpenAPI directly. The two I'll cover today are that TypeSpecs are smaller, more readable, and can use API components.
+TypeSpec is designed to be protocol agonstic, but the team has invested heavily in making great OpenAPI 3.0 emit. You can use TypeSpec to define most OpenAPI documents[^3] by using its `http` standard library which provides various types and decorators to add http-specific metadata like headers, query strings, or status codes. Writing OpenAPI in TypeSpec has many advantages over using OpenAPI directly. What I'll cover today is that TypeSpecs are smaller, more readable, and can use API components.
 
 [^3]: Some lesser-used features are not supported, like callbacks, but we're working on them. Some more-often-used features are also not supported, but we are working on them as we speak, like examples and xml.
 
