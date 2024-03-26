@@ -81,8 +81,6 @@ model Character {
 
 <figcaption>A TypeSpec union of literal types</figcaption></figure>
 
-&nbsp;
-
 <figure>
 
 ```yaml
@@ -110,8 +108,6 @@ model Character {
 
 <figcaption>A TypeSpec union of objects</figcaption>
 </figure>
-
-&nbsp;
 
 <figure>
 

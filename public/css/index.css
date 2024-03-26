@@ -28,3 +28,8 @@ a.header-anchor {
   color: #cccccc;
   text-decoration: none;
 }
+
+figure figcaption {
+  margin-top: -0.5rem;
+  margin-bottom: 2.5rem;
+}
