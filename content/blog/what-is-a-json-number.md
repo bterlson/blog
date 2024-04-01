@@ -179,7 +179,7 @@ The following table shows the data type used to represent the literal in each la
 
 Notes:
 
-- **C#**: Deserializing attempts to deserialize into the smallest supported int `int16`, then `int64`, then `decimal`. No attempt is made to deserialize into a `double` at this point, since it would only have the value of `+/- Infinity`. Also note that `decimal` is not an IEEE `decimal128` - the former has 28-29 significant digits, whereas `decimal128` has 34.
+- **C#**: The test code attempts to deserialize into the smallest supported int `int16`, then `int64`, then `decimal`. No attempt is made to deserialize into a `double` at this point, since it would only have the value of `+/- Infinity`. Also note that `decimal` is not an IEEE `decimal128` - the former has 28-29 significant digits, whereas `decimal128` has 34.
 - **Rust**: The type in this column represents the smallest possible type the value will deserialize into without error. If you know the schema in advance, you can make trivially make the huge integer case an error to avoid precision loss.
 - **Go**: You can serialize into integer types if you know the schema of the data and can ask the unmarshaller to give you an int64. The table represents the best you can do if you don't know the schema in advance. If you know the schema, you can handle the large integer case without precision loss, and also make the huge integer case an error.
 
