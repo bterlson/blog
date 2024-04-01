@@ -273,7 +273,7 @@
 &lt;/div&gt;
 &lt;p&gt;Notes:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;C#&lt;/strong&gt;: Deserializing attempts to deserialize into the smallest supported int &lt;code&gt;int16&lt;/code&gt;, then &lt;code&gt;int64&lt;/code&gt;, then &lt;code&gt;decimal&lt;/code&gt;. No attempt is made to deserialize into a &lt;code&gt;double&lt;/code&gt; at this point, since it would only have the value of &lt;code&gt;+/- Infinity&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;C#&lt;/strong&gt;: Deserializing attempts to deserialize into the smallest supported int &lt;code&gt;int16&lt;/code&gt;, then &lt;code&gt;int64&lt;/code&gt;, then &lt;code&gt;decimal&lt;/code&gt;. No attempt is made to deserialize into a &lt;code&gt;double&lt;/code&gt; at this point, since it would only have the value of &lt;code&gt;+/- Infinity&lt;/code&gt;. Also note that &lt;code&gt;decimal&lt;/code&gt; is not an IEEE &lt;code&gt;decimal128&lt;/code&gt; - the former has 28-29 significant digits, whereas &lt;code&gt;decimal128&lt;/code&gt; has 34.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Rust&lt;/strong&gt;: The type in this column represents the smallest possible type the value will deserialize into without error. If you know the schema in advance, you can make trivially make the huge integer case an error to avoid precision loss.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Go&lt;/strong&gt;: You can serialize into integer types if you know the schema of the data and can ask the unmarshaller to give you an int64. The table represents the best you can do if you don&#39;t know the schema in advance. If you know the schema, you can handle the large integer case without precision loss, and also make the huge integer case an error.&lt;/li&gt;
 &lt;/ul&gt;

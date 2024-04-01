@@ -295,7 +295,7 @@
 </div>
 <p>Notes:</p>
 <ul>
-<li><strong>C#</strong>: Deserializing attempts to deserialize into the smallest supported int <code>int16</code>, then <code>int64</code>, then <code>decimal</code>. No attempt is made to deserialize into a <code>double</code> at this point, since it would only have the value of <code>+/- Infinity</code>.</li>
+<li><strong>C#</strong>: Deserializing attempts to deserialize into the smallest supported int <code>int16</code>, then <code>int64</code>, then <code>decimal</code>. No attempt is made to deserialize into a <code>double</code> at this point, since it would only have the value of <code>+/- Infinity</code>. Also note that <code>decimal</code> is not an IEEE <code>decimal128</code> - the former has 28-29 significant digits, whereas <code>decimal128</code> has 34.</li>
 <li><strong>Rust</strong>: The type in this column represents the smallest possible type the value will deserialize into without error. If you know the schema in advance, you can make trivially make the huge integer case an error to avoid precision loss.</li>
 <li><strong>Go</strong>: You can serialize into integer types if you know the schema of the data and can ask the unmarshaller to give you an int64. The table represents the best you can do if you don't know the schema in advance. If you know the schema, you can handle the large integer case without precision loss, and also make the huge integer case an error.</li>
 </ul>
@@ -1056,6 +1056,6 @@
 
 		<footer></footer>
 
-		<!-- This page `/blog/what-is-a-json-number/` was built on 2024-04-01T18:56:24.838Z -->
+		<!-- This page `/blog/what-is-a-json-number/` was built on 2024-04-01T19:06:46.579Z -->
 	</body>
 </html>
