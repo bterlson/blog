@@ -304,7 +304,7 @@ Finally, due to some languages handling numeric literals with exponential and de
 
 ## Appendix: Test Code
 
-This code is garbage, LLMs were heavily involved in their creation. The output needs some interpretation. Feel free to suggest improvements on GitHub.
+This code is garbage, LLMs were heavily involved in their creation. The output needs some interpretation. Feel free to [suggest improvements on GitHub](https://github.com/bterlson/blog/blob/main/content/blog/what-is-a-json-number.md).
 
 ### JavaScript
 
