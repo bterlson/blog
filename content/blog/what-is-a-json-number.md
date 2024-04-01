@@ -75,6 +75,8 @@ C#'s `System.Text.JSON` library is the recommended way to handle JSON data these
 
 C# supports deserializing into appropriate data types through the use of `TryGet*` APIs. Using this API, it is possible to deserialize integer types losslessly up to `int64` and somewhat larger integers into a `decimal`. `decimal` can also be used to represent decimal values, potentially with precision loss. If you know the schema in advance, you can add support for deserializing into other data types, like `BigInteger`.
 
+C# also supports getting the raw text of the literal which allows for custom handling and round-tripping of arbitrary literals without precision loss.
+
 #### Java (JDK 11+, Jackson)
 
 Java typically uses the `Jackson` library to handle JSON serialization and deserialization. `Jackson` allows serialization and deserialization into any Java numeric type, including `BigDecimal`, allowing it to represent numeric literals of any range and precision without precision loss.
@@ -86,6 +88,8 @@ Rust's `serde_json` crate is commonly used for JSON serialization and deserializ
 #### Go
 
 Go's `encoding/json` library is capable of dynamically unmarshalling JSON number literals using the`float64` type. If you know the schema in advance, you can parse known integers into an appropriate integer type up to `int64`, and parse decimals into a `float32` type as appropriate. Support for unmarshalling e.g. decimal types or big integers can be added with some additional code, but also requires knowing the schema of the data.
+
+Go can be instructed to deserialize number literals into strings, allowing for custom handling and round-tripping of arbitrary literals without precision loss.
 
 #### Summary
 
