@@ -77,12 +77,14 @@
 <h4 id="c-net-8-system-text-json" tabindex="-1">C# (.NET 8, System.Text.JSON) <a class="header-anchor" href="#c-net-8-system-text-json">#</a></h4>
 <p>C#'s <code>System.Text.JSON</code> library is the recommended way to handle JSON data these days, though <code>Newtonsoft.JSON</code> is also commonly used. We examine the behavior of the former, the latter likely differs.</p>
 <p>C# supports deserializing into appropriate data types through the use of <code>TryGet*</code> APIs. Using this API, it is possible to deserialize integer types losslessly up to <code>int64</code> and somewhat larger integers into a <code>decimal</code>. <code>decimal</code> can also be used to represent decimal values, potentially with precision loss. If you know the schema in advance, you can add support for deserializing into other data types, like <code>BigInteger</code>.</p>
+<p>C# also supports getting the raw text of the literal which allows for custom handling and round-tripping of arbitrary literals without precision loss.</p>
 <h4 id="java-jdk-11-jackson" tabindex="-1">Java (JDK 11+, Jackson) <a class="header-anchor" href="#java-jdk-11-jackson">#</a></h4>
 <p>Java typically uses the <code>Jackson</code> library to handle JSON serialization and deserialization. <code>Jackson</code> allows serialization and deserialization into any Java numeric type, including <code>BigDecimal</code>, allowing it to represent numeric literals of any range and precision without precision loss.</p>
 <h4 id="rust-serde" tabindex="-1">Rust (serde) <a class="header-anchor" href="#rust-serde">#</a></h4>
 <p>Rust's <code>serde_json</code> crate is commonly used for JSON serialization and deserialization. It supports deserialization of integer values that fit within the range of an <code>i64</code>/<code>u64</code>. It also supports deserialization of integer and decimal values that fit within the range of an <code>f64</code>, though doing so may result in precision loss. Integers and decimals outside the range of an <code>f64</code> result in an error. Exponentials are always deserialized as doubles. However, <code>serde</code> has a <code>arbitrary_precision</code> configuration flag that can be used to round-trip arbitrary numeric values without precision loss assuming they are not deserialized in a lossy fashion. Support for deseralizing into other data types can be added with some additional code, but requires knowing the schema of the data.</p>
 <h4 id="go" tabindex="-1">Go <a class="header-anchor" href="#go">#</a></h4>
 <p>Go's <code>encoding/json</code> library is capable of dynamically unmarshalling JSON number literals using the<code>float64</code> type. If you know the schema in advance, you can parse known integers into an appropriate integer type up to <code>int64</code>, and parse decimals into a <code>float32</code> type as appropriate. Support for unmarshalling e.g. decimal types or big integers can be added with some additional code, but also requires knowing the schema of the data.</p>
+<p>Go can be instructed to deserialize number literals into strings, allowing for custom handling and round-tripping of arbitrary literals without precision loss.</p>
 <h4 id="summary" tabindex="-1">Summary <a class="header-anchor" href="#summary">#</a></h4>
 <p>To summarize the behavior of the various implementations, we can examine their behavior with the following values:</p>
 <style>
@@ -1056,6 +1058,6 @@
 
 		<footer></footer>
 
-		<!-- This page `/blog/what-is-a-json-number/` was built on 2024-04-01T19:47:30.704Z -->
+		<!-- This page `/blog/what-is-a-json-number/` was built on 2024-04-01T20:34:49.079Z -->
 	</body>
 </html>
