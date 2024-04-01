@@ -7,27 +7,42 @@
 	</url>
 	
 	<url>
+		<loc>https://blog.trl.sn/blog/what-is-a-json-number/</loc>
+		<lastmod>2024-04-01</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://blog.trl.sn/blog/</loc>
-		<lastmod>2024-03-26</lastmod>
+		<lastmod>2024-04-01</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://blog.trl.sn/</loc>
-		<lastmod>2024-03-26</lastmod>
+		<lastmod>2024-04-01</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://blog.trl.sn/tags/</loc>
-		<lastmod>2024-03-26</lastmod>
+		<lastmod>2024-04-01</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://blog.trl.sn/tags/typespec/</loc>
-		<lastmod>2024-03-26</lastmod>
+		<lastmod>2024-04-01</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://blog.trl.sn/tags/openapi/</loc>
-		<lastmod>2024-03-26</lastmod>
+		<lastmod>2024-04-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://blog.trl.sn/tags/json/</loc>
+		<lastmod>2024-04-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://blog.trl.sn/tags/json-schema/</loc>
+		<lastmod>2024-04-01</lastmod>
 	</url>
 </urlset>

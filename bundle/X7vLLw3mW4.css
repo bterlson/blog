@@ -1,4 +1,4 @@
-
+.postlist { counter-reset: start-from 2 }
 code {
   counter-reset: step;
   counter-increment: step 0;

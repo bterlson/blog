@@ -1,3 +1,4 @@
+.postlist { counter-reset: start-from 3 }
 code {
   counter-reset: step;
   counter-increment: step 0;
@@ -29,6 +30,5 @@ a.header-anchor {
 }
 
 figure figcaption {
-  margin-top: -0.5rem;
   margin-bottom: 2.5rem;
 }
