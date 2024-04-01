@@ -1,5 +1,5 @@
 ---
-title: What is a JSON Number?
+title: What even is a JSON Number?
 description: An exploration of numbers in JSON and various JSON implementations
 date: 2024-04-01
 tags:
