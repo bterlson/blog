@@ -27,22 +27,22 @@
 	</url>
 	
 	<url>
-		<loc>https://blog.trl.sn/tags/json/</loc>
-		<lastmod>2024-04-01</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://blog.trl.sn/tags/typespec/</loc>
 		<lastmod>2024-04-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://blog.trl.sn/tags/json-schema/</loc>
+		<loc>https://blog.trl.sn/tags/openapi/</loc>
 		<lastmod>2024-04-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://blog.trl.sn/tags/openapi/</loc>
+		<loc>https://blog.trl.sn/tags/json/</loc>
+		<lastmod>2024-04-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://blog.trl.sn/tags/json-schema/</loc>
 		<lastmod>2024-04-01</lastmod>
 	</url>
 </urlset>
